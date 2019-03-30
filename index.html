@@ -1,0 +1,53 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./assests/stylesheets/style.css">
+    <script src="./assets/javascripts/jquery.js"></script>
+    <script src="./assets/javascripts/bootstrap.js"></script>
+</head>
+
+	<body>
+		<h1>
+			Self Help Group
+		</h1>
+		<div class=container>
+		<table class="table">
+		<thead>
+			<tr>
+				<th>
+					பெயர் 
+				</th>
+				<th>
+					முகவரி 
+				</th>
+			</tr>
+			</thead>
+			<tbody>
+		<?php
+		require "connect.php";
+		$connection=new mysqli($servername,$username,$password,$db);
+
+if ($connection->connect_error)
+echo("some error happened");
+$sql="select id,name,address from members";
+mysqli_set_charset($connection,"utf8");
+$result=$connection->query($sql);
+while($row=$result->fetch_assoc())
+  {
+  	echo "<tr>";
+  		echo "<td>";
+   	echo($row["name"]);
+   echo "</td>";
+   echo "<td>";
+  	echo($row["address"]);
+  echo "</td>";
+    echo "</tr>";
+  }
+$connection->close();
+		?>
+	</tbody>
+	</table>
+
+	</div>
+	</body>
+	</html>
