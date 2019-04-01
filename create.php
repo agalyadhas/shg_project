@@ -1,8 +1,5 @@
 <?php
-$hostname="localhost";
-$username="root";
-$password="agalya32843";
-$db="TLF";
+require "connect.php";
 $connection=new mysqli($hostname,$username,$password,$db);
 if ($connection->connect_error)
 	echo("db error happend");
