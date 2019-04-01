@@ -1,1 +1,1 @@
-create table if not exists members(id integer primary key auto_increment,member_name varchar(60),address varchar(200));
+create table if not exists members(id integer primary key auto_increment,member_name varchar(60),address varchar(200)) character set utf8 collate utf8_general_ci;
