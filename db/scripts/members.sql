@@ -1,0 +1,1 @@
+create table if not exists members(id integer primary key auto_increment,member_name varchar(60),address varchar(200));
