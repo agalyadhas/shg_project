@@ -1,0 +1,15 @@
+use TLF;
+insert into members(member_name,address) values('எலிசபெத் ','99,கண்டோன்மெண்ட் ,குன்னூர் ');
+insert into members(member_name,address) values('அனிதா','56,ஹுபைத்தலை  , குன்னூர்');
+insert into members(member_name,address) values('நான்சி','172,மிலிட்டரி ஸ்கூல் ,குன்னூர்');
+insert into members(member_name,address) values('டர்த்தி','56,ஹுபைத்தலை ,குன்னூர் ');
+insert into members(member_name,address) values('உஷா','59 ,ஹுபைத்தலை ,குன்னூர்');
+insert into members(member_name,address) values('சுமதி',' 15, ய ம் சி எ நகர் ,குன்னூர்');
+insert into members(member_name,address) values('வித்யா','19,பெட்டிபோர்ட ,குன்னூர்');
+insert into members(member_name,address) values('சுதா','95, பெட்டிபோர்ட ,குன்னூர்');
+insert into members(member_name,address) values('சுமித்ரா','123,ஹுபைத்தலை ,குன்னூர்');
+insert into members(member_name,address) values('சௌமிய','151,பெட்டிபோர்ட  குன்னூர் ');
+insert into members(member_name,address) values('வெண்ணிலா','100,பெட்டட்டி ,குன்னூர் ');
+insert into members(member_name,address) values('அனந்தி','17,ஹுபைத்தலை குன்னூர் ');
+insert into members(member_name,address) values('தமிழ் செல்வி','200,ஹுபைத்தலை குன்னூர் ');
+insert into members(member_name,address) values('அணு ','256,ஹுபைத்தலை குன்னூர் ');
