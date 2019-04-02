@@ -26,17 +26,16 @@
 		<?php
 		require "connect.php";
 		$connection=new mysqli($servername,$username,$password,$db);
-
 if ($connection->connect_error)
 echo("some error happened");
-$sql="select id,name,address from members";
+$sql="select id,member_name,address from members";
 mysqli_set_charset($connection,"utf8");
 $result=$connection->query($sql);
 while($row=$result->fetch_assoc())
   {
   	echo "<tr>";
   		echo "<td>";
-   	echo($row["name"]);
+   	echo($row["member_name"]);
    echo "</td>";
    echo "<td>";
   	echo($row["address"]);
